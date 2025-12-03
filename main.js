@@ -2,7 +2,6 @@
 
 
 
-
 //2//
 
 const teg = document.querySelector('.hello')
@@ -19,7 +18,21 @@ else (teg.style.color = "")
 
 
 //3 не понял//
-//const img = querySelector("img")
+const img = querySelectorAll("img")
 
-//const random = Math.random() * 4;
+btn.addEventListener("dblclick" , function(){
+  return img.id * Math.random() * 4;
+})
 
+
+
+
+
+//const bin = document.createElement("h5");
+//bin.textContent = "hello"
+//bin.style.color = "blue"
+//bin.classList.add("h-text")
+//document.body.appendChild(bin)
+//bin.addEventListener("click" , function(){
+//  bin.style.color = "red"
+//})
