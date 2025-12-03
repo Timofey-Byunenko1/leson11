@@ -27,12 +27,3 @@ btn.addEventListener("dblclick" , function(){
 
 
 
-
-//const bin = document.createElement("h5");
-//bin.textContent = "hello"
-//bin.style.color = "blue"
-//bin.classList.add("h-text")
-//document.body.appendChild(bin)
-//bin.addEventListener("click" , function(){
-//  bin.style.color = "red"
-//})
