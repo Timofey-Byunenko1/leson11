@@ -18,11 +18,17 @@ else (teg.style.color = "")
 
 
 //3 не понял//
-const img = querySelectorAll("img")
+const imgs = document.getElementsByTagName("img")
+imgs.style.display = "none";
+
 
 btn.addEventListener("dblclick" , function(){
-  return img.id * Math.random() * 4;
+  const imgResult = Math.floor(Math.random) * imgs.length;
+
+  imgs[imgResult].style.display = "block";
+
 })
+
 
 
 
