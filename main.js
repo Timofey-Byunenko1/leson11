@@ -1,13 +1,13 @@
-//1 не поннял ///
+//1  поннял //на уроке обястнили/
 
 
 
 //2//
 
 const teg = document.querySelector('.hello')
-const btn = document.querySelector('button')
+const btns = document.querySelector('.buton-color')
 
-btn.addEventListener('click' , function(){
+btns.addEventListener('click' , function(){
   if ( teg.style.color !== "red")
     teg.style.color = "red";
 else (teg.style.color = "")
@@ -17,17 +17,26 @@ else (teg.style.color = "")
 
 
 
-//3 не понял//
-const imgs = document.getElementsByTagName("img")
-imgs.style.display = "none";
+//3//
+const imgs = document.getElementsByTagName('img');
+const btn = document.querySelector('.buton-img');
 
+for (let i = 0; i < imgs.length; i++) {
+  imgs[i].style.display = "none";
+}
 
-btn.addEventListener("dblclick" , function(){
-  const imgResult = Math.floor(Math.random) * imgs.length;
+btn.addEventListener('click', function () {
+
+  for (let i = 0; i < imgs.length; i++) {
+    imgs[i].style.display = "none";
+  }
+
+  const imgResult = Math.floor(Math.random() * imgs.length);
 
   imgs[imgResult].style.display = "block";
+});
 
-})
+
 
 
 
